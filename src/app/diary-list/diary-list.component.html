@@ -1,0 +1,16 @@
+<table>
+    <thead>
+      <tr>
+        <th>Note</th>
+        <th>Mood</th>
+        <th>Thought of the day</th>
+        <th>Energy</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let item of diaryItems; index as ii">
+      <td>{{ item.diaryText }}</td>
+      <td>{{ item.mood }}</td>
+      <td>{{ item.shorthand }}</td>
+      <td>{{ item.energy }}</td>
+    </tr>
+</table>

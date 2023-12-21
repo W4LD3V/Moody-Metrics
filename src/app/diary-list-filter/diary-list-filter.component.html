@@ -1,0 +1,27 @@
+<h2>Previous records:</h2>
+  
+<div>
+  <h3>Filter:</h3>
+  <select
+    [(ngModel)]="moodSelect"
+    (ngModelChange)="filterChanged()"
+  > 
+    <option value="0">All moods</option>
+    <option value="5">Excited</option>
+    <option value="4">Happy</option>
+    <option value="3">Anxious</option>
+    <option value="2">Scared</option>
+    <option value="1">Angry</option>
+</select>
+
+<select
+  [(ngModel)]="energySelect"
+  (ngModelChange)="filterChanged()"
+  > 
+  <option value="0">All energy levels</option>
+  <option value="4">High</option>
+  <option value="3">Medium</option>
+  <option value="2">Low</option>
+  <option value="1">Very Low</option>
+</select>
+</div>

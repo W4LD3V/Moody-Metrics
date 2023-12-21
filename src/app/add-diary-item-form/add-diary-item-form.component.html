@@ -1,0 +1,18 @@
+<form>
+    <h2>Add new:</h2>
+    <div class="diary-form-inputs" [ngClass]="'rounded'">
+      Thought of the day:
+      <input [(ngModel)]="newDiaryThought" [ngModelOptions]="{ standalone: true }">
+      Select mood:
+      <input [(ngModel)]="newDiaryMood" [ngModelOptions]="{ standalone: true }">
+      Select energy level:
+      <input [(ngModel)]="newDiaryEnergy" [ngModelOptions]="{ standalone: true }">
+      Note:
+      <input [(ngModel)]="newDiaryNote" [ngModelOptions]="{ standalone: true }">
+    </div>
+    <button
+      type="submit"
+      name="new-diary-item"
+      (click)="$event.preventDefault(); submitForm()"
+    >Submit</button>
+  </form>
