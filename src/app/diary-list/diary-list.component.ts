@@ -8,8 +8,4 @@ import { DiaryItem } from '../../shared/models/diary';
 })
 export class DiaryListComponent {
   @Input() diaryItems : DiaryItem[] = [];
-
-  ngOnChanges() {
-    console.log('Diary items changed in DiaryListComponent', this.diaryItems);
-  }
 }

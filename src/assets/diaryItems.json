@@ -1,0 +1,32 @@
+[
+    {
+        "diaryText": "Had a great day at the beach",
+        "mood": 4,
+        "shorthand": "beach",
+        "energy": 3
+    },
+    {
+        "diaryText": "Finished reading a fantastic book",
+        "mood": 5,
+        "shorthand": "book",
+        "energy": 4
+    },
+    {
+        "diaryText": "Met an old friend for coffee",
+        "mood": 3,
+        "shorthand": "coffee",
+        "energy": 2
+    },
+    {
+        "diaryText": "Took a long walk in the park",
+        "mood": 2,
+        "shorthand": "park",
+        "energy": 2
+    },
+    {
+        "diaryText": "Had a productive day at work",
+        "mood": 4,
+        "shorthand": "work",
+        "energy": 4
+    }
+]

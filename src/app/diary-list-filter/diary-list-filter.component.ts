@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, ChangeDetectorRef } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { DiaryItem } from '../../shared/models/diary';
 
 @Component({
@@ -12,7 +12,6 @@ export class DiaryListFilterComponent {
   moodSelect: string = '0';
   energySelect: string = '0';
 
-  constructor(private cdRef: ChangeDetectorRef) {}
 
   filterChanged() {
     console.log('Filter changed:', this.moodSelect, this.energySelect);
