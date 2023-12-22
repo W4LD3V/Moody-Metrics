@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DiaryService } from './diary.service';
 import { DiaryItem } from '../shared/models/diary';
 
@@ -7,25 +7,25 @@ import { DiaryItem } from '../shared/models/diary';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'moody_metrics';
+export class AppComponent implements OnInit {
   visibleItems: DiaryItem[] = [];
+  originalItems: DiaryItem[] = []; // Hold the original list
 
-  constructor(private diaryService: DiaryService) {
-    this.visibleItems = this.diaryService.getItems(); // Initialize with all items
-  }
+  constructor(private diaryService: DiaryService) {}
 
-  get items() {
-    return this.diaryService.getItems(); // Getter to retrieve items from the service
-  }
-
-  addDiaryItem(newItem: DiaryItem) {
-    this.diaryService.addItem(newItem);
-    this.visibleItems = this.diaryService.getItems(); // Refresh the list
+  ngOnInit(): void {
+    this.diaryService.getItems().subscribe((data: DiaryItem[]) => {
+      this.originalItems = data;
+      this.visibleItems = data;
+    });
   }
 
   onFilterChange(filteredItems: DiaryItem[]) {
-    console.log('Filter change detected in AppComponent', filteredItems);
-    this.visibleItems = filteredItems; // Update the list based on the filter
+    this.visibleItems = filteredItems;
+  }
+
+  // Uncomment or implement this method if it's used in your template
+  addDiaryItem(newItem: DiaryItem) {
+    // Implementation for adding a diary item
   }
 }

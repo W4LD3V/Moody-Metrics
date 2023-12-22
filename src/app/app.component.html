@@ -1,9 +1,5 @@
 <main>
-
-  <main>
-    <add-diary-item-form (addDiaryItem)="addDiaryItem($event)"></add-diary-item-form>
-    <diary-list-filter [items]="items" (filterChange)="onFilterChange($event)"></diary-list-filter>
-    <app-diary-list [diaryItems]="visibleItems"></app-diary-list>
-  </main>
-  
+  <add-diary-item-form (addDiaryItem)="addDiaryItem($event)"></add-diary-item-form>
+  <diary-list-filter [items]="originalItems" (filterChange)="onFilterChange($event)"></diary-list-filter>
+  <app-diary-list [diaryItems]="visibleItems"></app-diary-list>
 </main>
