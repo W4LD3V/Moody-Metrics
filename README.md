@@ -1,27 +1,40 @@
-# MoodyMetrics
+# Moody Metrics - Platform for health enthusiasts.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+#### Description:
 
-## Development server
+Personal diary platform made to log your daily mood and health metric changes and track relations between your body & mind. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Features:
 
-## Code scaffolding
+1. **Daily diary logging:** Users can log their mood changes each day.
+2. **Loging health metrics:** Users can log their health metrics like blood pressure, HRV, Sp02 etc.
+3. **Viewing statistics in chart format:** Users can see the changes and relationships between their mood and health changes overtime.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+#### Technologies Used:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Angular: The web application is built using Angular, a front-end framework in Javascript, to handle routing and HTTP requests.
+2. PostgreSQL: This library is utilized to interact with the  database, allowing for efficient storage and retrieval of health and user data.
+3. Bcrypt: Used for password hashing to securely store user credentials in the database.
+4. JavaScript: To enhance the user experience, JavaScript is incorporated to generate interactive charts for visualizing health metrics.
+5. Bootstrap: The app utilizes Bootstrap's CSS styling to maintain a simple and aesthetically pleasing design.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Design Choices:
 
-## Running end-to-end tests
+The design of the Moody Metrics prioritizes simplicity and usability, as the main objective was to create a user-friendly and minimalistic mood & health logger. Bootstrap was chosen for its responsive layout and pre-designed components, which allowed for quicker development and ensured a consistent look across different devices.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+#### Instructions:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run the AI Exchange, follow these steps:  
+
+1. Ensure you have Node installed on your system.
+2. Clone the project repository to your local machine.
+3. Open a terminal and navigate to the project directory.
+4. Go to client & server directories separatelly and run ``` npm install ``` to install the necesarry dependencies.
+5. Access the application by navigating to http://localhost:3000 in your web browser.
+
+#### Additional Information:
+
+Moody Metrics was developed as part of a personal project to enhance programming skills while building a practical and useful application. The app is still a work in progress, and future updates may include more features, such as syncing with other health apps and devices. Feedback and suggestions are always welcome to improve the app further.
